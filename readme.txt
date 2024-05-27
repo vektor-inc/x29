@@ -13,6 +13,8 @@ GitHub : https://github.com/vektor-inc/x-t9
 
 == Changelog ==
 
+[ Bug fix ] Fixed navigation submenu block not rendering menu item description HTML
+
 [ Design Tuning ] Add styles to inline kbd block.
 [ Bug fix ] Fix the display when vertically aligned in the center and right aligned.
 
