@@ -105,6 +105,38 @@ Overlay : allways ***********************
 	}
 }
 
+/*-------------------------------------------*/
+/*   Navigation Item description
+/*-------------------------------------------*/
+// .wp-block-navigation にすると編集画面で効かなくなるので .wp-block-navigation__container にしている
+.wp-block-navigation__container{
+	// Display the description only when the parent is a navigation item.
+	& > :where(.wp-block-navigation-item) > :where(.wp-block-navigation-item__content) > 
+	.wp-block-navigation-item__description {
+		display: block;
+	}
+	.wp-block-navigation-item__description {
+		font-size: 11px;
+		opacity: 0.6;
+	}
+	&.items-justified-left {
+		.wp-block-navigation-item__description {
+			text-align: left;
+		}
+	}
+	&.items-justified-center,
+	&.items-justified-space-between { /* 項目の間隔 */
+		.wp-block-navigation-item__description {
+			text-align: center;
+		}
+	}
+	&.items-justified-right {
+		.wp-block-navigation-item__description {
+			text-align: right;
+		}
+	}
+}
+
 /****************************************************** 
  * Sub Navigation Styles
  */
